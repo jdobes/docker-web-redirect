@@ -18,7 +18,7 @@ fi
 
 cat <<EOF > /etc/nginx/conf.d/default.conf
 server {
-	listen 80;
+	listen 8000;
 
 	rewrite ^/(.*)\$ $REDIRECT_TARGET\$1 permanent;
 }
